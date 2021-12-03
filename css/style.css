@@ -79,14 +79,18 @@ details {
   line-height: 24px;
   color: #000;
 }
+
+.sum {
+  text-align: right;
+}
 /*=======left-section=======*/
 
 .MY_img {
+  image-rendering: optimizeQuality;
   width: 300px;
   height: auto;
   margin: 35px auto auto 35px;
   box-shadow: 6px 6px 20px rgba(255, 255, 255, 0.103);
-  image-rendering: optimizeQuality;
 }
 .left_section {
   background: #1e2939;
