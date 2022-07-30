@@ -16,10 +16,10 @@
   <!--body-->
   <body>
     <div class="bodi_container">
-      <div class="main_container">
+      <main class="main_container">
         <!--left-section-->
         <aside class="left_section">
-          <img class="MY_img my-photo" src="img/MY.JPG" alt="MY" />
+          <img class="MY_img left_section-photo" src="img/MY.JPG" alt="MY" />
           <!--Contacts_block -->
           <div class="Contacts_block">
             <h2 class="left_block_h2">Contacts</h2>
@@ -65,7 +65,16 @@
           </div>
         </aside>
         <!--right-section-->
-        <div class="right_section">
+        <section class="right_section">
+          <header>
+            язык принт тема
+            <select name="select">
+              <option selected value="ru">ru</option>
+              <option value="ua">ua</option>
+              <option value="en">en</option>
+            </select>
+            <a href="" download>Скачать резюме</a>
+          </header>
           <!--about_me_block-->
           <article class="about_me_block">
             <p>Front-End Developer</p>
@@ -81,16 +90,16 @@
                   <strong>я люблю:</strong>улучшать, доробатывать,
                   <img src="img/abaut/iloveimg-resized/2.jpg" alt="project" />
                   <strong>я люблю:</strong>улучшать, доробатывать,
-                  <img src="img/abaut/iloveimg-resized/3.png" alt="project" />
-                  <strong>я люблю:</strong>улучшать, доробатывать,
+                  <!-- <img src="img/abaut/iloveimg-resized/3.png" alt="project" />
+                  <strong>я люблю:</strong>улучшать, доробатывать, -->
                   <img src="img/abaut/iloveimg-resized/4.jpg" alt="project" />
                   <strong>я люблю:</strong>улучшать, доробатывать,
-                  <img src="img/abaut/iloveimg-resized/5.png" alt="project" />
-                  <strong>я люблю:</strong>улучшать, доробатывать,
+                  <!-- <img src="img/abaut/iloveimg-resized/5.png" alt="project" />
+                  <strong>я люблю:</strong>улучшать, доробатывать, -->
                   <img src="img/abaut/iloveimg-resized/6.jpg" alt="project" />
                   <strong>я люблю:</strong>улучшать, доробатывать,
-                  <img src="img/abaut/iloveimg-resized/7.png" alt="project" />
-                  <strong>я люблю:</strong>улучшать, доробатывать,
+                  <!-- <img src="img/abaut/iloveimg-resized/7.png" alt="project" />
+                  <strong>я люблю:</strong>улучшать, доробатывать, -->
                   <img src="img/abaut/iloveimg-resized/8.jpg" alt="project" />
                   <!-- <strong>я люблю:</strong>изучать, делиться своим опытом<img src="img/1project.jpg" alt="project"> -->
                   <!-- <br>я не люблю: пустые разговоры, не выполнение взятых на себя обязательств, отсутствие принципов или смена их по каждому чиху. -->
@@ -106,7 +115,7 @@
           <article class="Projects_block сomand">
             <h2>Comand projects</h2>
             <ol>
-              <li>
+              <li class="project-item">
                 <a
                   href="https://evglitik.github.io/team-prodject-4/"
                   class="Projects_block_link"
@@ -118,7 +127,7 @@
                 <span class="Projects_block_text"> HTML5, CSS3 </span>
                 <span class="Projects_block_bracket">]</span>
               </li>
-              <li>
+              <li class="project-item">
                 <a
                   href="https://maksim-yaroschuk.github.io/cinematics-filmoteka/index.html"
                   class="Projects_block_link"
@@ -130,7 +139,7 @@
                 <span class="Projects_block_text"> JavaScript </span>
                 <span class="Projects_block_bracket">]</span>
               </li>
-              <li>
+              <li class="project-item">
                 <a
                   href="https://kidslike.goit.global/"
                   class="Projects_block_link"
@@ -149,7 +158,7 @@
           <article class="Projects_block personal">
             <h2>Personal projects</h2>
             <ol>
-              <li>
+              <li class="project-item">
                 <a
                   href="https://tkachan.github.io/goit-markup-hw-08/index.html"
                   class="Projects_block_link"
@@ -161,7 +170,7 @@
                 <span class="Projects_block_text"> HTML5, CSS3 </span>
                 <span class="Projects_block_bracket">]</span>
               </li>
-              <li>
+              <li class="project-item">
                 <a
                   href="https://tkachan.github.io/HW_JS_11/"
                   class="Projects_block_link"
@@ -173,7 +182,7 @@
                 <span class="Projects_block_text"> JavaScript </span>
                 <span class="Projects_block_bracket">]</span>
               </li>
-              <li>
+              <li class="project-item">
                 <a
                   href="https://kidslike.goit.global/"
                   class="Projects_block_link"
@@ -571,8 +580,8 @@
             </p>
             <br /><br /><br />
           </article>
-        </div>
-      </div>
+        </section>
+      </main>
       <br /><br /><br />
     </div>
   </body>
