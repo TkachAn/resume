@@ -133,18 +133,29 @@ header {
   width: 370px;
   padding: 35px;
 }
-.left_section-photo {
+img {
   display: block;
+  max-width: 100%;
+  height: auto;
+}
+.left_section-photo {
   margin: 0 auto;
-  image-rendering: optimizeQuality;
+  /* image-rendering: optimizeQuality; */
+
   width: 300px;
   height: auto;
   box-shadow: 6px 6px 20px rgba(255, 255, 255, 0.103);
 }
 .left_block_h2 {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   color: #ffffff;
+  margin: 0 0 20px 20px;
+}
+.Contacts_block,
+.Tech_Skills_block,
+.Soft_Skills_block {
+  margin-left: 30px;
 }
 .Contacts_block {
   margin-top: 50px;
@@ -160,7 +171,8 @@ header {
 }
 .orange-punkt {
   color: #fb6d3a;
-  margin-left: 55px;
+  list-style-type: disc;
+  /* margin-left: 55px; */
 }
 .skills-text {
   color: #fff; /*#808790;*/
