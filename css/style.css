@@ -23,9 +23,12 @@ body {
   padding: 40px;
   width: 1280px;
   height: auto; /*auto; /* 1399px;*/
-
   background: #f5f7fa;
-  /*box-shadow: #fb6d3a;*/
+  @media screen and (min-width: 1280px) {
+    padding: 40px;
+    width: 1280px;
+    height: auto;
+  }
 }
 
 .main_container {
@@ -45,10 +48,6 @@ body {
 h1 {
   /* padding-top: 30px;
   padding-bottom: 40px; */
-  text-shadow: 6px 6px 12px rgba(128, 128, 128, 0.452);
-  font-size: 45px;
-  line-height: 54, 84px;
-  color: #000;
 }
 h2 {
   color: #595959;
@@ -98,13 +97,7 @@ ol {
   font-weight: bold;
   text-shadow: 3px 3px 6px lightgrey;
 }
-/* .details_my {
-  margin-left: 40px;
-}
-details {
-  font-weight: 400;
-  color: #a8a8a8;
-} */
+
 .sum,
 .sum_P {
   font-style: normal;
@@ -119,11 +112,10 @@ details {
 }
 /* ======header============ */
 header {
-  position: relative;
+  /* position: relative; */
   text-align: end;
   height: 40px;
   background-color: #fff;
-  /* color: #ffffff; */
 }
 
 /*=======left-section=======*/
@@ -140,39 +132,26 @@ img {
 }
 .left_section-photo {
   margin: 0 auto;
-  /* image-rendering: optimizeQuality; */
-
+  image-rendering: optimizeQuality;
   width: 300px;
   height: auto;
   box-shadow: 6px 6px 20px rgba(255, 255, 255, 0.103);
 }
 .left_block_h2 {
-  /* margin-left: auto;
-  margin-right: auto; */
   color: #ffffff;
-  margin: 0 0 20px 20px;
+  margin: 0 0 20px 40px;
+  /* text-align: center;  #a8a8a8;*/
 }
 .Contacts_block,
 .Tech_Skills_block,
 .Soft_Skills_block {
-  margin-left: 30px;
-}
-.Contacts_block {
+  margin-left: 50px;
   margin-top: 50px;
-  /*height: 230;*/
 }
-.Tech_Skills_block {
-  margin-top: 50px;
-  /*height: 230;*/
-}
-.Soft_Skills_block {
-  margin-top: 45px;
-  /*height: 230;*/
-}
+
 .orange-punkt {
   color: #fb6d3a;
   list-style-type: disc;
-  /* margin-left: 55px; */
 }
 .skills-text {
   color: #fff; /*#808790;*/
@@ -181,46 +160,81 @@ img {
 .set-link {
   color: #8a94a3; /* #8a94a3; #fff; */
   font-weight: 400;
-  padding: 5px;
+  /* padding: 5px; */
+  text-align: right;
+}
+.check {
+  background-color: #000000;
 }
 /*======right_section=======*/
 
 .right_section {
-  width: 830px;
+  max-width: 830px;
   padding: 35px 50px;
 
   /*background: #ffffff;*/
 }
+.icon {
+  width: 16px;
+  fill: #ffffff;
+  stroke: #000000;
+}
+.header {
+  /* display: flex; */
+}
+.en-ua {
+  border: none;
+}
+.h1 {
+  margin: 30px auto 50px auto;
+  text-shadow: 6px 6px 12px rgba(128, 128, 128, 0.452);
+  font-size: 45px;
+  line-height: 94, 84px;
+  color: #000;
+}
+.about_me_block div {
+  /* display: flex; */
+  align-content: flex-end;
+  text-align: justify;
+  /* max-width: 540px; */
+  /* text-align: right; */
+  /* margin-left: 200px; */
+  margin-bottom: 50px;
+}
+.about_me_P {
+  display: block;
+  /* text-align: right; */
+  /* margin-left: 100px; */
+}
 .project-item {
+  margin-left: 20px;
   list-style-type: decimal;
 }
-.Work_Experience_container_h2 {
-  /* padding-left: 40px; */
+.Projects_block {
+  margin-bottom: 50px;
 }
-/* .article {
-  padding: 0px;
-  margin-left: 40px;
-  margin-right: auto;
-  width: 525px;
-} */
-/*.padding-block,*/
+.Education_block h2,
+.Work_1_block h2,
+.Work_2_block h2,
+.Work_3_block h2,
+.Projects_block h2 {
+  margin-bottom: 20px;
+}
+.Work_Experience_container_h2 {
+  padding-left: 40px;
+  margin-bottom: 30px;
+}
+
 .about_me_block,
 .Projects_block,
 .Work_1_block,
 .Work_2_block,
 .Work_3_block,
 .Education_block {
+  /* display: flex; */
   padding: 0px;
-  /* margin-left: 40px; */
+  margin-left: 40px;
   font-weight: 400;
-}
-.about_me_block {
-  /* margin-top: 90px; */
-  height: auto;
-}
-
-.about_me_P {
-  /* width: 525px; */
 }
 .about_me_S {
   font-style: normal;
@@ -230,17 +244,12 @@ img {
   color: #a8a8a8;
 }
 .Projects_block {
-  display: flex;
+  /* display: flex; */
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  /* width: 400px; */
-  /* align-content: space-between; */
-  justify-content: space-between;
-  /* or 171% */
-
   color: #595959;
   height: auto;
 }
@@ -257,19 +266,19 @@ img {
   font-weight: 400;
 }
 .Work_1_block {
-  margin-top: 50px;
+  margin-bottom: 20px;
   height: auto;
 }
 .Work_2_block {
-  margin-top: 21px;
+  margin-bottom: 20px;
   height: auto;
 }
 .Work_3_block {
-  margin-top: 20px;
+  margin-bottom: 50px;
   height: auto;
 }
 .Education_block {
-  margin-top: 50px;
+  margin-bottom: 20px;
   height: auto;
 }
 .univer,
@@ -293,7 +302,7 @@ img {
 }
 .data_set {
   margin-top: 0px;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
   /* margin-left: 40px; */
   padding: 0px;
   font-style: normal;
