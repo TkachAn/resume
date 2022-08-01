@@ -110,6 +110,9 @@ ol {
 .sum {
   text-align: right;
 }
+.sum:hover {
+  cursor: pointer;
+}
 /* ======header============ */
 header {
   /* position: relative; */
@@ -170,7 +173,7 @@ img {
 
 .right_section {
   max-width: 830px;
-  padding: 35px 50px;
+  padding: 35px 90px;
 
   /*background: #ffffff;*/
 }
