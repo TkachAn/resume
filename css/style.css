@@ -182,9 +182,6 @@ img {
   fill: #ffffff;
   stroke: #000000;
 }
-.header {
-  /* display: flex; */
-}
 .en-ua {
   border: none;
 }
@@ -196,22 +193,24 @@ img {
   color: #000;
 }
 .about_me_block div {
-  /* display: flex; */
   align-content: flex-end;
   text-align: justify;
-  /* max-width: 540px; */
-  /* text-align: right; */
-  /* margin-left: 200px; */
   margin-bottom: 50px;
 }
 .about_me_P {
   display: block;
-  /* text-align: right; */
-  /* margin-left: 100px; */
 }
+
+/* .sum {
+  display: flex;
+  /* flex-direction: column; */
+/*justify-content: space-between;
+} */
 .project-item {
-  margin-left: 20px;
+  /* margin-left: 20px; */
   list-style-type: decimal;
+  display: flex;
+  justify-content: space-between;
 }
 
 .Education_block h2,
@@ -232,8 +231,6 @@ img {
 .Work_2_block,
 .Work_3_block,
 .Education_block {
-  /* display: flex; */
-  width: 500px;
   padding: 0px;
   margin-left: 40px;
   font-weight: 400;
@@ -246,7 +243,6 @@ img {
   color: #a8a8a8;
 }
 .Projects_block {
-  /* display: flex; */
   margin-bottom: 50px;
   font-family: Montserrat;
   font-style: normal;
@@ -255,6 +251,12 @@ img {
   line-height: 24px;
   color: #595959;
   height: auto;
+}
+.Work_1_block,
+.Work_2_block,
+.Work_3_block,
+.ol {
+  width: 480px;
 }
 .Projects_block_link {
   color: #595959;
