@@ -213,9 +213,7 @@ img {
   margin-left: 20px;
   list-style-type: decimal;
 }
-.Projects_block {
-  margin-bottom: 50px;
-}
+
 .Education_block h2,
 .Work_1_block h2,
 .Work_2_block h2,
@@ -235,6 +233,7 @@ img {
 .Work_3_block,
 .Education_block {
   /* display: flex; */
+  width: 500px;
   padding: 0px;
   margin-left: 40px;
   font-weight: 400;
@@ -248,6 +247,7 @@ img {
 }
 .Projects_block {
   /* display: flex; */
+  margin-bottom: 50px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
